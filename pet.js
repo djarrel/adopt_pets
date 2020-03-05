@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Pet = props => {
+const Pet = ({name, animal, breed}) => {
     return (
         <div>
-            <h1>props.name</h1>
-            <h1>props.animal</h1>
-            <h1>props.breed</h1>
+            <h1>{name}</h1>
+            <h1>{animal}</h1>
+            <h1>{breed}</h1>
         </div>
     )
 }
@@ -17,3 +17,5 @@ const Pet = props => {
 //         React.createElement("h2", null, breed)
 //     ]);
 // }
+
+export default Pet;
